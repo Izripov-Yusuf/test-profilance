@@ -1,0 +1,55 @@
+.my-links {
+  &__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__item {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    &:nth-child(odd) {
+      background-color: #ededed;
+      border-color: #acacac;
+    }
+  }
+  &__full-link {
+    margin: 0 30px 0 15px;
+    display: block;
+    flex-shrink: 0;
+    width: 40%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__short-link {
+    margin-right: 15px;
+    display: block;
+    flex-grow: 1;
+  }
+  &__transition {
+    margin-left: auto;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e69ff;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 768px) {
+    &__item {
+      flex-direction: column;
+    }
+    &__full-link, &__short-link {
+      margin: 0 0 15px;
+      width: 100%;
+    }
+    &__transition {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.link-form {
+  padding: 15px;
+  background-color: #ededed;
+  border-radius: 3px;
+  &__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__input {
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid #acacac;
+    border-radius: 3px;
+  }
+  &__button {
+    padding: 10px 20px;
+    background-color: #ededed;
+    border: 1px solid #acacac;
+    border-radius: 3px;
+    cursor: pointer;
+    &:active {
+      background-color: #acacac;
+    }
+  }
+}

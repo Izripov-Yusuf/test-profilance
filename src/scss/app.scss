@@ -1,0 +1,41 @@
+@import './libs/normalize';
+
+.app {
+  padding: 20px;
+  &__title {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ededed;
+    border-radius: 3px;
+  }
+  &__wrap {
+    display: flex;
+  }
+  &__col {
+    margin-right: 60px;
+    flex-grow: 1;
+    &:first-child {
+      min-width: 650px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link-form {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 1200px) {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__col {
+      margin-right: 0;
+      flex-grow: 1;
+      &:first-child {
+        margin-bottom: 30px;
+        min-width: auto;
+      }
+    }
+  }
+}
